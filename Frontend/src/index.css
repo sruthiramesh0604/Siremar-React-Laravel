@@ -1,0 +1,996 @@
+/* 
+WEB DATA MANAGEMENT PROJECT -> PHASE 1
+
+GROUP 24
+SOHAM SANTOSH TEMBE - 1001960847
+FNU SRUTHI RAMESH - 1001964704
+PALLAVI RAJENDRA PARNAIK - 1001960840
+
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Ramaraja&display=swap");
+
+body {
+  background-color: #1e2630;
+  margin: 0;
+  font-family: 'Libre Baskerville', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgb(202, 199, 199);
+}
+
+code {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.About p {
+  color: rgb(245, 192, 192);
+  font-size: 20px;
+  margin: 80px 50px;
+  text-align: left;
+}
+
+.main hr {
+  border: 2px solid #e91e63;
+  width: 450px;
+  margin-top: 15px;
+}
+
+
+.img1 {
+  width: auto;
+  height: 400px;
+  margin: 60px 80px auto 60px;
+  border-radius: 0%;
+  border: 3px solid white;
+  float: left;
+}
+
+.img1:hover {
+  transform: scaleX(-1);
+  transition: 2s;
+}
+
+.About h1 {
+  margin-bottom: 0px;
+}
+
+
+.aboutList {
+  float: none;
+  padding-top: 20px;
+}
+
+.aboutList>li {
+  display: inline-block;
+}
+
+.locationI {
+  padding-right: 15px;
+}
+
+.adminDashboard {
+  margin: 2rem;
+  border-style: solid;
+  border-width: 3px;
+  border-color: antiquewhite;
+}
+
+.adminDashboard .countyDiv td input {
+  border-style: hidden;
+  background-color: inherit;
+  max-width: 70px;
+  text-align: center;
+}
+
+.welcomeDiv {
+  color: azure;
+  text-align: center;
+  line-height: 10em;
+  background-color: #1c46b8;
+  display: flexbox;
+}
+
+.adminDashboard TabPanel {
+  text-align: center;
+}
+
+.countyDiv {
+  display: flex;
+}
+
+.countyDiv table {
+  text-align: center;
+  width: 60%;
+  height: 10vh;
+  /* overflow: scroll; */
+}
+
+.featDiv {
+  display: inline-flex;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.featDiv table {
+  text-align: center;
+  width: 60%;
+  height: 8vh;
+  overflow: scroll;
+}
+
+.featDiv table td {
+  padding: 0%;
+}
+
+.featDiv td input {
+  border-style: hidden;
+  background-color: inherit;
+  text-align: center;
+}
+
+.adminDashboard .row {
+  margin-bottom: 0.3rem;
+}
+
+.adminDashboard #submit {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 1rem;
+  text-align: center;
+}
+
+.adminDashboard #update {
+  background-color: #db8708;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0.2rem;
+  text-align: center;
+}
+
+.adminDashboard #delete {
+  background-color: #8f0830;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0.2rem;
+  text-align: center;
+}
+
+.adminDashboard input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.adminDashboard input[type="date"],
+input[type="datetime-local"],
+input[type="time"] {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.image5 {
+  width: 37%;
+  margin-left: 2%;
+  border-radius: 10px;
+}
+
+.image6 {
+  width: 37%;
+  /* margin-left: 1%; */
+  margin-right: 2%;
+  border-radius: 10px;
+}
+
+.image7 {
+  width: 36%;
+  /* margin-left: 1%; */
+  margin-left: 2%;
+  border-radius: 10px;
+}
+
+.blog-box {
+  margin: 2%;
+  text-align: left;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.footerblock {
+  background-color: #0b8e1a;
+  text-align: left;
+  color: white;
+  height: 55px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.footerblock li {
+  margin-left: 3rem;
+}
+
+h1 {
+  margin-top: 1%;
+  text-align: center;
+}
+
+.register {
+  /* display: flex; */
+
+  /* align-items: flex-end; */
+  /* flex-direction: column; */
+  height: 100%;
+  margin-top: 3%;
+}
+
+.main-register {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-boxreg {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: 110px;
+  height: 35px;
+  border: 1px solid white;
+  background-color: #0b8e1a;
+  color: white;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-top: 3.5%;
+}
+
+.boxreg {
+  width: 750px;
+  height: 400px;
+  border: 10px solid #0b8e1a;
+  border-radius: 5%;
+  text-align: center;
+}
+
+.formreg {
+  margin-top: 2.5%;
+  margin-left: 9%;
+  display: inline-flexbox;
+}
+
+.input-sizereg3 {
+  width: 690px;
+  height: 40px;
+  margin-top: 1%;
+  margin-right: 5%;
+}
+
+.input-sizereg1 {
+  width: 280px;
+  height: 40px;
+  margin-top: 1%;
+  margin-right: 5%;
+}
+
+.input-sizereg2 {
+  width: 690px;
+  height: 180px;
+  margin-top: 1%;
+  margin-right: 5%;
+}
+
+.input-bodyreg {
+  display: inline-flex;
+  margin-top: 1%;
+}
+
+.linkreg {
+  margin-top: 4%;
+}
+
+h1 {
+  margin-top: 1%;
+  text-align: center;
+}
+
+.register {
+  /* display: flex; */
+
+  /* align-items: flex-end; */
+  /* flex-direction: column; */
+  height: 100%;
+  margin-top: 3%;
+}
+
+.main-register {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-boxreg {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: 110px;
+  height: 35px;
+  border: 1px solid white;
+  background-color: #0b8e1a;
+  color: white;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-top: 3.5%;
+}
+
+.boxreg {
+  width: 750px;
+  height: 400px;
+  border: 10px solid #0b8e1a;
+  border-radius: 5%;
+  text-align: center;
+}
+
+.formreg {
+  margin-top: 2.5%;
+  margin-left: 9%;
+  display: inline-flexbox;
+}
+
+.input-sizereg3 {
+  width: 690px;
+  height: 40px;
+  margin-top: 1%;
+  margin-right: 5%;
+}
+
+.input-sizereg1 {
+  width: 280px;
+  height: 40px;
+  margin-top: 1%;
+  margin-right: 5%;
+}
+
+.input-sizereg2 {
+  width: 690px;
+  height: 180px;
+  margin-top: 1%;
+  margin-right: 5%;
+}
+
+.input-bodyreg {
+  display: inline-flex;
+  margin-top: 1%;
+}
+
+.linkreg {
+  margin-top: 4%;
+}
+
+.home {
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.home h1 {
+  margin-top: 100px;
+}
+
+.home button {
+  margin: 2rem;
+  font-size: large;
+}
+
+.siteInfo {
+  display: flex;
+  justify-content: space-around;
+
+  /* position: relative;
+      left: -400px; */
+  /* padding: 34%;
+      padding-top: 5pt;
+      padding-bottom: 10pt;
+      text-align: left;
+      font-size: larger; */
+}
+
+.image1 {
+  width: auto;
+  height: 350px;
+  margin: 50px 150px auto 0px;
+  border-radius: 10px;
+
+  /* position: relative; */
+  /* left: 250px;
+      padding: 30%;
+      padding-top: 5pt;
+      padding-bottom: 5pt; */
+}
+
+.content {
+  margin: 70px 80px auto 150px;
+  font-size: 20px;
+  text-align: left;
+  color: #ffffff9f;
+}
+
+.home button {
+  margin: 50px 0px;
+  padding: 15px 75px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #0b8e1a;
+  border: 0px;
+  font-size: 20px;
+}
+
+.home button:hover {
+  background-color: #421ca8;
+  transition: background-color 2s;
+  color: #ffffff !important;
+}
+
+.welcomeDiv {
+  color: azure;
+  text-align: center;
+  line-height: 10em;
+  background-color: #1c46b8;
+  display: flexbox;
+}
+
+.inspectorDashboard {
+  margin: 2rem;
+  border-style: solid;
+  border-width: 3px;
+  border-color: antiquewhite;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.inspectorDashboard input[type="text"],
+select,
+textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.inspectorDashboard input[type="date"] {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.inspectorDashboard label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.inspectorDashboard #submit {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+  text-align: center;
+}
+
+.inspectorDashboard #submit:hover {
+  background-color: #45a049;
+}
+
+.inspectorDashboard .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.inspectorDashboard .col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.inspectorDashboard .col-75 {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+}
+
+.inspectorDashboard .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.login {
+  /* display: flex; */
+
+  /* align-items: flex-end; */
+  /* flex-direction: column; */
+  height: 100%;
+  margin-top: 12%;
+  margin-left: 130vh;
+}
+
+.Loginmain {
+  display: inline-block;
+  /* float: left; */
+  /* flex-direction: column; */
+}
+
+.loginH1 {
+  float: left;
+  width: 60%;
+  margin-left: 6%;
+  margin-top: 8%;
+  text-align: center;
+  background: url("https://cdn.cnn.com/cnnnext/dam/assets/180219103122-zanzibar-and-its-islands---mnemba-a-view-from-the-sky-mnemba-island-lodge-super-169.jpg");
+}
+
+.loginH1 h1,
+h2 {
+  color: #dd195a;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: 110px;
+  height: 35px;
+  border: 1px solid white;
+  background-color: #0b8e1a;
+  color: white;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-top: 20%;
+}
+
+.box {
+  width: 340px;
+  height: 400px;
+  border: 10px solid #0b8e1a;
+  border-radius: 10%;
+  text-align: center;
+}
+
+.form {
+  margin-top: 18%;
+  /* display: flex; */
+}
+
+.input-size {
+  width: 180px;
+  height: 40px;
+  margin-top: 10%;
+}
+
+.input-body {
+  display: flex;
+}
+
+.link {
+  margin-top: 4%;
+}
+
+.navbar {
+  color: rgb(233, 226, 217);
+  width: 100%;
+  /* position: fixed; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 15px; */
+  background: linear-gradient(315deg, #1c46b8, #0b8e1a);
+}
+
+.siteName {
+  margin: 1%;
+  float: left;
+  margin-left: 2rem;
+  font-size: 2.5rem;
+}
+
+.navbar ul {
+  float: right;
+  margin-right: 20px;
+}
+
+.navbar li {
+  font-size: larger;
+  list-style: none;
+  display: inline;
+  margin: 1rem;
+}
+
+.linkName {
+  color: white;
+  text-decoration: none;
+}
+
+.register {
+  height: 100%;
+  margin-top: 3%;
+}
+
+.main-register {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-boxreg1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.button {
+  width: 110px;
+  height: 35px;
+  border: 1px solid white;
+  background-color: #0b8e1a;
+  color: white;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-top: 5.5%;
+}
+
+.boxreg1 {
+  width: 750px;
+  height: 400px;
+  border: 10px solid #0b8e1a;
+  border-radius: 5%;
+  text-align: center;
+  padding: 3rem;
+}
+
+.formreg1 {
+  margin-left: -4%;
+}
+
+.input-sizereg {
+  width: 180px;
+  height: 40px;
+  margin-top: 1%;
+}
+
+.input-bodyreg {
+  display: inline-flex;
+  /* margin-top: 6%; */
+}
+
+.linkreg {
+  margin-top: 4%;
+}
+
+.main-register input[type="text"],
+select,
+textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.residentDashboard {
+  margin: 2rem;
+  border-style: solid;
+  border-width: 3px;
+  border-color: antiquewhite;
+}
+
+.dashboardContent>* {
+  display: inline-flex;
+  /* vertical-align: middle; */
+  text-align: center;
+}
+
+.welcomeDiv {
+  color: azure;
+  text-align: center;
+  /* height: 10em; */
+  line-height: 10em;
+  background: linear-gradient(45deg, #1c46b8, crimson);
+  display: flexbox;
+}
+
+.welcomeDiv h1 {
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+.tableBox {
+  margin: 2rem;
+  width: 45%;
+}
+
+caption {
+  font-size: xx-large;
+  margin-bottom: 0.5%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+}
+
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 120%;
+}
+
+tbody {
+  display: block;
+  margin-left: 3rem;
+  max-height: 45vh;
+  overflow-y: scroll;
+}
+
+.table td,
+.table th {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.table th {
+  position: sticky;
+  top: 0;
+}
+
+.table tr {
+  background-color: #f2f2f2;
+  color: rgb(9, 30, 70);
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04aa6d;
+  color: white;
+}
+
+.residentDashboard li {
+  list-style: none;
+  line-height: 3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.residentDashboard input[type="text"],
+select,
+textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.residentDashboard input[type="date"] {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.residentDashboard label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.residentDashboard #submit {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+  /* float: right; */
+}
+
+.residentDashboard input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.residentDashboard .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.residentDashboard .col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.residentDashboard .col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.residentDashboard .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.services {
+  text-align: center;
+  /* margin-bottom: 300px; */
+}
+
+.services hr {
+  border: 2px solid #0b8e1a;
+  width: 530px;
+  /* margin-top: 15px; */
+}
+
+.serviceParagraph span {
+  font-family: "Ramaraja", serif;
+  font-size: x-large;
+}
+
+.serviceParagraph {
+  color: rgb(248, 212, 212);
+}
+
+.image1 {
+  position: relative;
+  width: 38%;
+  height: 50%;
+  border-radius: 0%;
+  left: 50px;
+  border: 5px solid white;
+}
+
+.image2 {
+  position: relative;
+  width: 38%;
+  height: 50%;
+  top: 300px;
+  right: 200px;
+  border: 5px solid white;
+
+  /* position: absolute;
+    width: 38%;
+    top: 850px;
+    right: 400px;
+    z-index: 1; */
+}
+
+.image3 {
+  position: relative;
+  width: 38%;
+  top: 200px;
+  right: 300px;
+  border: 5px solid white;
+
+  /* position: relative;
+    width: 38%;
+    top: 500px;
+    right: 650px; */
+}
+
+/* .footerblock {
+  background-color: #e91e63;
+  text-align: left;
+  color: white;
+  height: auto;
+} */
+
+.chatDiv {
+  width: 25%;
+  margin: auto;
+  display: inline-flex;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #0b8e1a;
+}
+
+.chatDiv .userList ul {
+  padding-left: 0%;
+  max-height: 35vh;
+  overflow-y: scroll;
+  margin: 2rem;
+}
+
+.chatDiv .userList li {
+  cursor: pointer;
+  line-height: 3;
+  list-style: none;
+}
+
+.chatDiv .chat {
+  height: 20vh;
+  display: block;
+  max-height: 30vh;
+  overflow-y: scroll;
+  text-align: start;
+  line-height: 1rem;
+  margin: 2rem;
+}
+
+.inspectorDashboard #submit {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 1rem;
+  text-align: center;
+}
+
+.inspectorDashboard #update {
+  background-color: #db8708;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0.2rem;
+  text-align: center;
+}
+
+.inspectorDashboard #delete {
+  background-color: #8f0830;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0.2rem;
+  text-align: center;
+}
+
+.inspectorDashboard .countyDiv td input {
+  border-style: hidden;
+  background-color: inherit;
+  max-width: 70px;
+}
